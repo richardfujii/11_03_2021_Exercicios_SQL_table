@@ -10,14 +10,14 @@ CREATE TABLE tb_atributos(
     licenciado BOOLEAN DEFAULT FALSE,
     PRIMARY KEY (id)
 );
-INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) values ("Henrique",20,"Analista I",3500,false);
-INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) values ("Gabriela",21,"Analista II",3800,false);
-INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) values ("Giulia",24,"Analista III",4500,false);
-INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) values ("Giovanna",22,"Analista IV",5500,false);
-INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) values ("Arnold",23,"Analista V",3500,false);
+INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) VALUES ("Henrique",20,"Analista I",3500,false);
+INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) VALUES ("Gabriela",21,"Analista II",3800,false);
+INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) VALUES ("Giulia",24,"Analista III",4500,false);
+INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) VALUES ("Giovanna",22,"Analista IV",5500,false);
+INSERT INTO tb_atributos (nome,idade,cargo,salario,licenciado) VALUES ("Arnold",23,"Analista V",3500,false);
 
-SELECT *FROM tb_atributos where salario<2000;
-SELECT *FROM tb_atributos where salario>2000;
+SELECT *FROM tb_atributos WHERE salario<2000;
+SELECT *FROM tb_atributos WHERE salario>2000;
 
 UPDATE tb_atributos SET nome = "Felix" WHERE id=1;
 SELECT *FROM tb_atributos;
