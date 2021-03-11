@@ -19,9 +19,8 @@ INSERT INTO tb_produto (nome, cor, quantidade, preco, presente) VALUES ("REBOOK"
 INSERT INTO tb_produto (nome, cor, quantidade, preco, presente) VALUES ("VANS", "roxo", 3, 200.13, true);
 
 SELECT *FROM tb_produto;
-
-ALTER TABLE tb_produto
-DROP presente;
+SELECT *FROM tb_produto WHERE preco>=500;
+SELECT *FROM tb_produto WHERE preco<500;
 
 UPDATE tb_produto SET preco = 500.00 WHERE id=1;
 UPDATE tb_produto SET preco = 1000.00 WHERE id=2;
